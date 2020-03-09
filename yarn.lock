@@ -1063,6 +1063,11 @@
     consola "^2.10.1"
     eslint-loader "^3.0.0"
 
+"@nuxtjs/gtm@^2.2.2":
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/gtm/-/gtm-2.2.2.tgz#85fec9ce2aa76400d991644eaf5d119f2109047e"
+  integrity sha512-pIYbn8SoRRAR964pSsPz64XHfrmpGVsco2sZdWC63jEa3/+mlFjHUuswyinaq2+vj64g6JQrj6n0TQoRzmfdnQ==
+
 "@nuxtjs/markdownit-loader@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@nuxtjs/markdownit-loader/-/markdownit-loader-1.1.1.tgz#7223b49064a176394f6f82aad3bf622069004799"

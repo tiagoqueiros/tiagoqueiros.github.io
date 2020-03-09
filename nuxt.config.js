@@ -37,7 +37,11 @@ export default {
   /*
    ** Nuxt.js dev-modules~
    */
-  buildModules: ["@nuxtjs/eslint-module", "@nuxtjs/stylelint-module"],
+  buildModules: [
+    "@nuxtjs/eslint-module",
+    "@nuxtjs/stylelint-module",
+    "@nuxtjs/gtm"
+  ],
   /*
    ** Nuxt.js modules
    */
@@ -59,12 +63,9 @@ export default {
 
   styleResources: {
     scss: ["~/assets/scss/global.scss"]
-  }
+  },
 
-  /* markdownit: {
-    preset: "default",
-    linkify: true,
-    breaks: true,
-    use: ["markdown-it-div", "markdown-it-attrs"]
-  } */
+  gtm: {
+    id: "GTM-MXLJPXC"
+  }
 };
