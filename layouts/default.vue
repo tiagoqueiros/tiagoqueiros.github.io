@@ -1,55 +1,60 @@
 <template>
-  <div>
-    <nuxt />
+  <div class="container">
+    <div class="content--fixed">
+      <div class="title">
+        <Nuxt />
+      </div>
+    </div>
+    <div class="content">
+      <SvgWave />
+    </div>
   </div>
 </template>
 
-<style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+<script>
+import Vue from "vue";
+import SvgWave from "~/components/SvgWave.vue";
+
+export default Vue.extend({
+  components: {
+    SvgWave
+  }
+});
+</script>
+
+<style lang="scss" scoped>
+.container {
+  width: calc(100vw - 40px);
+  height: calc(100vh - 40px);
+  margin: 20px;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
+.content {
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  height: 100%;
+  border-radius: 10px;
+  z-index: 1;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+.content--fixed {
+  position: fixed;
+  width: calc(100vw - 40px);
+  height: calc(100vh - 40px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
+.title {
+  margin: 20px;
+  z-index: 11;
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+  @include lg {
+    max-width: 800px;
+  }
 }
 </style>
