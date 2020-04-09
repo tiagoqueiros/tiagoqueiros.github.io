@@ -14,7 +14,6 @@ install:
   - yarn cache clean
   - yarn install
   - yarn generate
-  - yarn copy
 
 script:
   - echo "Skipping tests"
