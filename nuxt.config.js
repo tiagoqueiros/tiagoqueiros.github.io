@@ -16,6 +16,7 @@ export default {
     ],
     link: [
       { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+      { rel: "mask-icon", color: "#990000", href: "/favicon.svg" },
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css?family=Roboto"

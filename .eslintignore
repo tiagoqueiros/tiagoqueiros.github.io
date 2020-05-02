@@ -1,0 +1,8 @@
+*.json
+*.lock
+*.md
+*.scss
+*.svg
+
+dist
+.nuxt

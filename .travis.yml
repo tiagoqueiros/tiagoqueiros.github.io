@@ -1,6 +1,8 @@
+os: linux
+dist: xenial
 language: node_js
 node_js:
-  - "10"
+  - "12"
 
 cache:
   directories:
@@ -11,9 +13,9 @@ branches:
     - dev
 
 install:
-  - yarn cache clean
   - yarn install
-  - yarn generate
+  - yarn lint:all
+  - yarn static:ci
 
 script:
   - echo "Skipping tests"

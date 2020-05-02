@@ -5,11 +5,19 @@
   "author": "Tiago Queirós",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+    "nuxt": "rm -rf dist && rm -rf .nuxt && nuxt",
+    "ssr": "yarn ssr:build && nuxt start",
+    "ssr:build": "yarn nuxt build",
+    "ssr:analyze": "yarn ssr:build --analyze",
+    "spa": "yarn nuxt build --spa",
+    "spa:ci": "yarn spa --fail-on-error",
+    "spa:analyze": "yarn spa --analyze",
+    "static": "yarn nuxt generate",
+    "static:ci": "yarn static --fail-on-error",
+    "lint:js": "eslint --quiet '**/*.*'",
+    "lint:style": "stylelint '**/*.*'",
+    "lint:all": "yarn lint:js && yarn lint:style",
+    "ftp-deploy": "nodemon ci/deploy.js"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.9.7",
