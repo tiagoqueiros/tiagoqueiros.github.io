@@ -17,8 +17,8 @@ import SvgWave from "~/components/SvgWave.vue";
 
 export default Vue.extend({
   components: {
-    SvgWave
-  }
+    SvgWave,
+  },
 });
 </script>
 

@@ -1,1 +1,4 @@
 *.json
+/dist/
+/nuxt/
+/node_modules/
