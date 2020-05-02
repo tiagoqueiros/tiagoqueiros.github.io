@@ -11,17 +11,17 @@ export default {
       {
         hid: "description",
         name: "description",
-        content: process.env.npm_package_description || ""
-      }
+        content: process.env.npm_package_description || "",
+      },
     ],
     link: [
       { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
       { rel: "mask-icon", color: "#990000", href: "/favicon.svg" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css?family=Roboto"
-      }
-    ]
+        href: "https://fonts.googleapis.com/css?family=Roboto",
+      },
+    ],
   },
   /*
    ** Customize the progress-bar color
@@ -41,7 +41,7 @@ export default {
   buildModules: [
     "@nuxtjs/eslint-module",
     "@nuxtjs/stylelint-module",
-    "@nuxtjs/gtm"
+    "@nuxtjs/gtm",
   ],
   /*
    ** Nuxt.js modules
@@ -59,14 +59,14 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) {},
   },
 
   styleResources: {
-    scss: ["~/assets/scss/global.scss"]
+    scss: ["~/assets/scss/global.scss"],
   },
 
   gtm: {
-    id: "GTM-MXLJPXC"
-  }
+    id: "GTM-MXLJPXC",
+  },
 };
