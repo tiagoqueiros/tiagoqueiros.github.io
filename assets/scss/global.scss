@@ -76,18 +76,32 @@ span,
 a,
 p,
 li {
-  font-family: "Roboto", serif;
   color: $white;
   text-decoration: none;
   transition: color $transition-ease-in-out,
     border-bottom $transition-ease-in-out;
 }
 
+h1 {
+  font-family: itc-benguiat, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+span,
+a,
+p,
+li {
+  font-family: futura-pt, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
 a:hover,
 a:focus {
   @include md {
     color: $light-grey;
-    border-bottom: 2px solid $light-grey;
+    border-bottom: 1px solid $light-grey;
   }
 }
 
@@ -115,13 +129,13 @@ li {
   line-height: 22px;
 
   @include md {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 26px;
   }
 
   @include lg {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 28px;
   }
 }
 

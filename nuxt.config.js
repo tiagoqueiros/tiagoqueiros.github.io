@@ -19,7 +19,7 @@ export default {
       { rel: "mask-icon", color: "#990000", href: "/favicon.svg" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css?family=Roboto",
+        href: "https://use.typekit.net/zwy4kql.css",
       },
     ],
   },
