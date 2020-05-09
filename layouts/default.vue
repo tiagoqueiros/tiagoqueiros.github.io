@@ -35,7 +35,7 @@ export default Vue.extend({
   left: 0;
   overflow: hidden;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 16px;
   z-index: 1;
 }
 

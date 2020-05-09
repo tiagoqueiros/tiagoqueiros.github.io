@@ -46,7 +46,12 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ["@nuxtjs/axios", "@nuxtjs/style-resources", "@nuxtjs/markdownit"],
+  modules: [
+    "@nuxtjs/axios",
+    "@nuxtjs/style-resources",
+    "@nuxtjs/markdownit",
+    "@nuxtjs/svg",
+  ],
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
