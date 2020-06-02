@@ -1253,10 +1253,13 @@
     consola "^2.11.3"
     eslint-loader "^4.0.2"
 
-"@nuxtjs/gtm@^2.2.3":
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/gtm/-/gtm-2.2.3.tgz#c5e861e9988e69c6e69e11808fcd0af27d3571fd"
-  integrity sha512-YRvxCo2rpe61kR49LmepK0lCjrrb3hvb89X7/AO5IFPzPU6hxUDpi4V3rnahUTwHcDdYknVqtjAn8ZFMp+HE2Q==
+"@nuxtjs/gtm@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/gtm/-/gtm-2.3.0.tgz#e6b6f29b62eb3d659ba1e44f353c8902ee49b4d9"
+  integrity sha512-sMDQomgZ4MuxDPtka+zoi3hfnNkHL8B5q1XJZVoY9qgN3/P3PiOOrPG/MnbAy8o49HPW3ByPW3hicJYPEKQYmw==
+  dependencies:
+    chalk "^4.0.0"
+    semver "^7.3.2"
 
 "@nuxtjs/markdownit-loader@^1.1.1":
   version "1.1.1"

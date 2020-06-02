@@ -29,7 +29,7 @@
   "devDependencies": {
     "@nuxtjs/eslint-config": "^2.0.0",
     "@nuxtjs/eslint-module": "^2.0.0",
-    "@nuxtjs/gtm": "^2.2.3",
+    "@nuxtjs/gtm": "^2.3.0",
     "@nuxtjs/markdownit": "^1.2.9",
     "@nuxtjs/style-resources": "^1.0.0",
     "@nuxtjs/stylelint-module": "^4.0.0",
