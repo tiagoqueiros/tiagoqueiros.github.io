@@ -20,7 +20,7 @@
     "ftp-deploy": "nodemon ci/deploy.js"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.11.0",
+    "@nuxtjs/axios": "^5.12.0",
     "lodash": "^4.17.19",
     "nuxt": "^2.13.3",
     "vue": "^2.6.11",
