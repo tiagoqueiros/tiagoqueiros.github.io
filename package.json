@@ -33,7 +33,7 @@
     "@nuxtjs/markdownit": "^1.2.10",
     "@nuxtjs/style-resources": "^1.0.0",
     "@nuxtjs/stylelint-module": "^4.0.0",
-    "@nuxtjs/svg": "^0.1.11",
+    "@nuxtjs/svg": "^0.1.12",
     "babel-eslint": "^10.0.1",
     "breakpoint-sass": "^2.7.1",
     "css-loader": "^4.2.1",
