@@ -37,16 +37,14 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .wave-wrapper {
   background-color: #12163d;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-items: center;
+  width: calc(2 * 100vh);
+  height: 0;
+  position: relative;
 }
 
 .wave {
-  width: 100vw;
-  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 </style>
