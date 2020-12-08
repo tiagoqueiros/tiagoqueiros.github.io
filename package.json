@@ -22,7 +22,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.12.3",
     "lodash": "^4.17.20",
-    "nuxt": "^2.14.9",
+    "nuxt": "^2.14.10",
     "vue": "^2.6.11",
     "vue-animejs": "^2.1.1"
   },
