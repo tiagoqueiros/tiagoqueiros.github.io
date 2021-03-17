@@ -36,9 +36,6 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .wave-wrapper {
-  background-color: #12163d;
-  width: calc(2 * 100vh);
-  height: 0;
   position: relative;
 }
 
@@ -46,5 +43,17 @@ export default Vue.extend({
   position: absolute;
   top: 0;
   left: 0;
+}
+
+@media (orientation: landscape) {
+  .wave-wrapper {
+    width: 160vw;
+  }
+}
+
+@media (orientation: portrait) {
+  .wave-wrapper {
+    width: 200vh;
+  }
 }
 </style>

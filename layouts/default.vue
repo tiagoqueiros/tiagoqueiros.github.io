@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="content--fixed">
-      <div class="title">
+      <div class="content-wrapper">
         <Nuxt />
       </div>
     </div>
@@ -49,12 +49,9 @@ export default Vue.extend({
   z-index: 10;
 }
 
-.title {
+.content-wrapper {
+  max-width: 480px;
   margin: 20px;
   z-index: 11;
-
-  @include lg {
-    max-width: 800px;
-  }
 }
 </style>

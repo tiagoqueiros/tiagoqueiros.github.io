@@ -1,7 +1,7 @@
 {
   "name": "tiagoqueiros.github.io",
   "version": "1.0.0",
-  "description": "My personal website made with Nuxt.js and Markdown",
+  "description": "My personal website made with Nuxt.js and Markdown.",
   "author": "Tiago Queirós",
   "private": true,
   "scripts": {
