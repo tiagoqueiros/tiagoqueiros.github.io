@@ -1,11 +1,10 @@
 module.exports = {
   root: true,
+  parser: "@typescript-eslint/parser",
+  plugins: ["@typescript-eslint"],
   env: {
     node: true,
-    browser: true,
-    es2020: true,
   },
-  plugins: ["json-format"],
   extends: ["@pixelmatters/eslint-config-pixelmatters"],
   rules: {
     "no-console": process.env.NODE_ENV === "production" ? 2 : 0,

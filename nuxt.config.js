@@ -25,26 +25,32 @@ export default {
       },
     ],
   },
+
   /*
    ** Customize the progress-bar color
    */
   loading: { color: "#fff" },
+
   /*
    ** Global CSS
    */
   css: ["~/assets/scss/global.scss"],
+
   /*
    ** Plugins to load before mounting the App
    */
   plugins: ["~/plugins/vue-anime"],
+
   /*
    ** Nuxt.js dev-modules~
    */
+
   buildModules: [
     "@nuxtjs/eslint-module",
     "@nuxtjs/stylelint-module",
     "@nuxtjs/gtm",
   ],
+
   /*
    ** Nuxt.js modules
    */
@@ -54,20 +60,6 @@ export default {
     "@nuxtjs/markdownit",
     "@nuxtjs/svg",
   ],
-  /*
-   ** Axios module configuration
-   ** See https://axios.nuxtjs.org/options
-   */
-  axios: {},
-  /*
-   ** Build configuration
-   */
-  build: {
-    /*
-     ** You can extend webpack config here
-     */
-    extend(config, ctx) {},
-  },
 
   styleResources: {
     scss: ["~/assets/scss/global.scss"],
