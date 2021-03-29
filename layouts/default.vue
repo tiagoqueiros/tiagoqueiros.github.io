@@ -33,25 +33,25 @@ export default Vue.extend({
   position: relative;
   top: 0;
   left: 0;
-  overflow: hidden;
-  height: 100%;
-  border-radius: 16px;
   z-index: 1;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 16px;
 }
 
 .content--fixed {
   position: fixed;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: calc(100vw - 40px);
   height: calc(100vh - 40px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 10;
 }
 
 .content-wrapper {
+  z-index: 11;
   max-width: 480px;
   margin: 20px;
-  z-index: 11;
 }
 </style>

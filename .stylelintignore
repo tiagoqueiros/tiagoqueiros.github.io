@@ -1,4 +1,5 @@
+node_modules/*
+assets/css/*
+*.ico
+*.ts
 *.json
-/dist/
-/nuxt/
-/node_modules/

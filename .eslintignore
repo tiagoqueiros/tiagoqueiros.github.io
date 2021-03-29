@@ -2,7 +2,8 @@
 *.lock
 *.md
 *.scss
-*.svg
+*.css
+*.ico
 
+ci
 dist
-.nuxt
