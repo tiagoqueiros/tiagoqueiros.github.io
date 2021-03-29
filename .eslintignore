@@ -5,6 +5,6 @@
 *.css
 *.ico
 
-ci
-dist
-static
+.nuxt/
+dist/
+static/

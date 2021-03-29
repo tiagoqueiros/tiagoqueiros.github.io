@@ -16,8 +16,7 @@
     "static:ci": "yarn static --fail-on-error",
     "lint": "yarn lint:eslint && yarn lint:stylelint",
     "lint:eslint": "eslint --ext js,jsx,ts,tsx,vue --quiet .",
-    "lint:stylelint": "stylelint .",
-    "ftp-deploy": "nodemon ci/deploy.js"
+    "lint:stylelint": "stylelint ."
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.1",

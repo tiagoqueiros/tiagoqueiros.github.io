@@ -1,5 +1,8 @@
-node_modules/*
-assets/css/*
 *.ico
 *.ts
 *.json
+*.log
+
+.nuxt/
+dist/
+static/
