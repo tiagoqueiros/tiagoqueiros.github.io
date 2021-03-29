@@ -14,9 +14,9 @@
     "spa:analyze": "yarn spa --analyze",
     "static": "yarn nuxt generate",
     "static:ci": "yarn static --fail-on-error",
-    "lint:js": "eslint --quiet '**/*.*'",
-    "lint:style": "stylelint '**/*.*'",
-    "lint:all": "yarn lint:js && yarn lint:style",
+    "lint": "yarn lint:eslint && yarn lint:stylelint",
+    "lint:eslint": "eslint --ext js,jsx,ts,tsx,vue --quiet .",
+    "lint:stylelint": "stylelint .",
     "ftp-deploy": "nodemon ci/deploy.js"
   },
   "dependencies": {
