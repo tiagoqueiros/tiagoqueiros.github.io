@@ -44,7 +44,7 @@
     "@typescript-eslint/parser": "^4.20.0",
     "breakpoint-sass": "^2.7.1",
     "css-loader": "^5.2.1",
-    "eslint": "^7.23.0",
+    "eslint": "^7.24.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-prettier": "^3.3.1",
