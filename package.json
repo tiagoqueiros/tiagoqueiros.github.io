@@ -40,7 +40,7 @@
     "@pixelmatters/eslint-config-pixelmatters": "^1.0.2",
     "@pixelmatters/prettier-config-pixelmatters": "^1.0.0",
     "@pixelmatters/stylelint-config-pixelmatters": "^1.0.2",
-    "@typescript-eslint/eslint-plugin": "^4.20.0",
+    "@typescript-eslint/eslint-plugin": "^4.21.0",
     "@typescript-eslint/parser": "^4.20.0",
     "breakpoint-sass": "^2.7.1",
     "css-loader": "^5.2.1",
