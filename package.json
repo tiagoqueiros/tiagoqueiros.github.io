@@ -22,7 +22,7 @@
     "@nuxtjs/axios": "^5.13.1",
     "highlight.js": "^10.7.2",
     "lodash": "^4.17.21",
-    "nuxt": "^2.15.5",
+    "nuxt": "^2.15.6",
     "vue": "^2.6.11",
     "vue-animejs": "^2.1.1"
   },
