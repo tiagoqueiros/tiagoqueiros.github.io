@@ -34,7 +34,7 @@
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/gtm": "^2.4.0",
     "@nuxtjs/markdownit": "^2.0.0",
-    "@nuxtjs/style-resources": "^1.0.0",
+    "@nuxtjs/style-resources": "^1.1.0",
     "@nuxtjs/stylelint-module": "^4.0.0",
     "@nuxtjs/svg": "^0.1.11",
     "@pixelmatters/eslint-config-pixelmatters": "^1.0.2",
