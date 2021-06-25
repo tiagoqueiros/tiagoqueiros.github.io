@@ -1,0 +1,26 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  reviewers:
+  - tiagoqueiros
+  ignore:
+  - dependency-name: webpack
+    versions:
+    - "> 4.46.0"
+  - dependency-name: webpack
+    versions:
+    - ">= 5.a, < 6"
+  - dependency-name: eslint-config-prettier
+    versions:
+    - 8.0.0
+    - 8.1.0
+  - dependency-name: nuxt
+    versions:
+    - 2.15.3
+  - dependency-name: webpack
+    versions:
+    - 4.46.0
