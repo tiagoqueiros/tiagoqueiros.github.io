@@ -22,18 +22,14 @@ li {
 }
 
 h1 {
-  @apply text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl font-normal;
-
-  font-family: itc-benguiat, serif;
+  @apply text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl font-normal;
 }
 
 span,
 a,
 p,
 li {
-  @apply text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl font-light;
-
-  font-family: futura-pt, sans-serif;
+  @apply text-sm lg:text-base xl:text-xl 2xl:text-4xl font-light;
 }
 
 a {

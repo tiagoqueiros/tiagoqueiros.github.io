@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   distDir: 'dist',
-  output: 'export',
-  assetPrefix: './'
+  trailingSlash: true,
+  output: 'export'
 }
 
 module.exports = nextConfig
