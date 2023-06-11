@@ -1,28 +1,3 @@
-<template>
-  <div class="container">
-    <div class="content--fixed">
-      <div class="content-wrapper">
-        <Nuxt />
-      </div>
-    </div>
-    <div class="content">
-      <SvgWave />
-    </div>
-  </div>
-</template>
-
-<script>
-import Vue from "vue";
-import SvgWave from "~/components/SvgWave.vue";
-
-export default Vue.extend({
-  components: {
-    SvgWave,
-  },
-});
-</script>
-
-<style lang="scss" scoped>
 .container {
   width: calc(100vw - 40px);
   height: calc(100vh - 40px);
@@ -53,5 +28,8 @@ export default Vue.extend({
   z-index: 11;
   max-width: 480px;
   margin: 20px;
+
+  & > *:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
-</style>

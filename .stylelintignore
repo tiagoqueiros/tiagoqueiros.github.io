@@ -1,8 +1,0 @@
-*.ico
-*.ts
-*.json
-*.log
-
-.nuxt/
-dist/
-static/
