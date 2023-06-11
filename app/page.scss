@@ -1,10 +1,10 @@
-.container {
+.home__container {
   width: calc(100vw - 40px);
   height: calc(100vh - 40px);
   margin: 20px;
 }
 
-.content {
+.home__content {
   position: relative;
   top: 0;
   left: 0;
@@ -14,7 +14,7 @@
   border-radius: 16px;
 }
 
-.content--fixed {
+.home__content--fixed {
   position: fixed;
   z-index: 10;
   display: flex;
@@ -24,7 +24,7 @@
   height: calc(100vh - 40px);
 }
 
-.content-wrapper {
+.home__content-wrapper {
   z-index: 11;
   max-width: 480px;
   margin: 20px;
