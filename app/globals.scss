@@ -22,7 +22,9 @@ li {
 }
 
 h1 {
-  @apply text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl font-normal;
+  @apply text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl font-normal mb-2;
+
+  font-family: var(--font-unbounded);
 }
 
 span,
@@ -30,6 +32,8 @@ a,
 p,
 li {
   @apply text-sm lg:text-base xl:text-xl 2xl:text-4xl font-light;
+
+  font-family: var(--font-hk-grotesk);
 }
 
 a {

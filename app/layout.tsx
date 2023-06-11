@@ -1,9 +1,5 @@
-import './fonts.scss'
 import './globals.scss'
-import { Inter } from 'next/font/google'
-
-// If loading a variable font, you don't need to specify the font weight
-const inter = Inter({ subsets: ['latin'] })
+import { unbounded, hankenGrotesk } from "@/app/fonts";
 
 export const metadata = {
   title: 'Tiago Queirós ⚡️ Product Owner',
@@ -17,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${unbounded.variable} ${hankenGrotesk.variable}`}>{children}</body>
     </html>
   )
 }
