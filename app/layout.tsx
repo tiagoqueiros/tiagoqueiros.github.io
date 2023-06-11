@@ -2,8 +2,8 @@ import './globals.scss'
 import { unbounded, hankenGrotesk } from "@/app/fonts";
 
 export const metadata = {
-  title: 'Tiago Queirós ⚡️ Product Owner',
-  description: 'Multidisciplinary digital creator from Porto, Portugal. Product Owner at Pixelmatters.',
+  title: 'Tiago Queirós ⚡️ Product Manager',
+  description: 'Cross-Functional Leadership and Know-How. Turning Data into User-Centric Solutions.',
 }
 
 export default function RootLayout({

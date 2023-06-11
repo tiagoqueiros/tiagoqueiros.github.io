@@ -31,7 +31,7 @@ span,
 a,
 p,
 li {
-  @apply text-sm lg:text-base xl:text-xl 2xl:text-4xl font-light;
+  @apply text-sm lg:text-base xl:text-lg 2xl:text-3xl font-light;
 
   font-family: var(--font-hk-grotesk);
 }
