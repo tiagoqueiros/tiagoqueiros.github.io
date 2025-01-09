@@ -1,34 +1,40 @@
 name: Deploy
+permissions:
+  contents: write
 on:
   push:
-    branches: [dev]
+    branches: [ dev ]
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v3
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
         with:
-          node-version: 16
-          cache: 'npm'
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
 
       - name: Install packages
-        run: npm install
+        run: pnpm install
 
       - name: Lint code
-        run: npm run lint
+        run: pnpm run lint
 
       - name: Build 🏗
-        run: npm run build
+        run: pnpm run build
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@3.7.1
+        uses: JamesIves/github-pages-deploy-action@v4.7.2
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SINGLE_COMMIT: true
-          BRANCH: main
-          FOLDER: dist
-          CLEAN: true
+          folder: dist
+          branch: main
+          clea: true
+          single-commit: true
