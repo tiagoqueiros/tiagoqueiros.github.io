@@ -1,34 +1,86 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tiago Queirós Portfolio
 
-## Getting Started
+A modern, minimalist portfolio website built with Next.js 14, showcasing my work as a Product Engineer. The site features a clean design with animated waves and smooth transitions, optimized for both desktop and mobile viewing.
 
-First, run the development server:
+## 🚀 Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+- **Framework:** [Next.js 14](https://nextjs.org/) (App Router)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Animations:** 
+  - [Framer Motion](https://www.framer.com/motion/)
+  - [Anime.js](https://animejs.com/)
+- **Type Safety:** [TypeScript](https://www.typescriptlang.org/)
+- **Package Manager:** [pnpm](https://pnpm.io/)
+- **Deployment:** [GitHub Pages](https://pages.github.com/)
+
+## ✨ Features
+
+- Responsive design optimized for all screen sizes
+- Smooth animations and transitions
+- Dynamic SVG wave background
+- Dark mode optimized
+- Type-safe codebase
+- SEO optimized
+
+## 🛠️ Development
+
+### Prerequisites
+
+- Node.js 18+ 
+- pnpm 8+
+
+### Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/tiagoqueiros/tiagoqueiros.github.io.git
+   cd tiagoqueiros.github.io
+   ```
+
+2. Install dependencies:
+   ```bash
+   pnpm install
+   ```
+
+3. Start the development server:
+   ```bash
+   pnpm dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Scripts
+
+- `pnpm dev` - Start development server
+- `pnpm build` - Build for production
+- `pnpm start` - Start production server
+- `pnpm lint` - Run ESLint
+- `pnpm format` - Format code with Prettier
+
+## 📁 Project Structure
+
+```
+.
+├── app/
+│   ├── components/     # React components
+│   ├── config/        # Site configuration
+│   ├── lib/           # Utility functions and configurations
+│   ├── styles/        # Global styles
+│   ├── layout.tsx     # Root layout
+│   └── page.tsx       # Home page
+├── public/            # Static assets
+└── package.json       # Project dependencies and scripts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Deployment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The site is automatically deployed to GitHub Pages using GitHub Actions when changes are pushed to the main branch.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 📄 License
 
-## Learn More
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-To learn more about Next.js, take a look at the following resources:
+## 🤝 Contact
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- LinkedIn: [tiagofaqueiros](https://www.linkedin.com/in/tiagofaqueiros)
+- GitHub: [@tiagoqueiros](https://github.com/tiagoqueiros)
