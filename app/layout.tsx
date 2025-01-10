@@ -1,9 +1,8 @@
-import type {Metadata, Viewport} from 'next';
-import Script from 'next/script';
-
+import type { Metadata, Viewport } from 'next';
+import { GoogleAnalytics } from '@next/third-parties/google';
+import { inter, outfit } from '@/lib/fonts';
+import { siteConfig } from '@/config/site';
 import '@/styles/globals.scss';
-import {inter, outfit} from '@/lib/fonts';
-import {siteConfig} from '@/config/site';
 
 export const viewport: Viewport = {
     ...siteConfig.viewport,
@@ -17,16 +16,16 @@ export const metadata: Metadata = {
     metadataBase: new URL(siteConfig.url),
     icons: {
         icon: [
-            {url: '/favicon.ico', sizes: 'any'},
-            {url: '/favicon.svg', type: 'image/svg+xml'},
+            { url: '/favicon.ico', sizes: 'any' },
+            { url: '/favicon.svg', type: 'image/svg+xml' },
         ],
         apple: [
-            {url: '/apple-touch-icon.png'},
+            { url: '/apple-touch-icon.png' },
         ],
     },
     themeColor: [
-        {media: '(prefers-color-scheme: light)', color: siteConfig.themeColor},
-        {media: '(prefers-color-scheme: dark)', color: siteConfig.themeColor}
+        { media: '(prefers-color-scheme: light)', color: siteConfig.themeColor },
+        { media: '(prefers-color-scheme: dark)', color: siteConfig.themeColor }
     ],
     appleWebApp: {
         statusBarStyle: 'black-translucent',
@@ -71,29 +70,18 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-                                       children,
-                                   }: {
+    children,
+}: {
     children: React.ReactNode;
 }) {
     return (
         <html lang="en" className={`antialiased ${inter.variable} ${outfit.variable}`}>
-        <body>
-        <div className="min-h-screen flex flex-col">
-            {children}
-        </div>
-        <Script
-            src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.analytics.googleId}`}
-            strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-            {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${siteConfig.analytics.googleId}');
-          `}
-        </Script>
-        </body>
+            <body>
+                <div className="min-h-screen flex flex-col">
+                    {children}
+                </div>
+                <GoogleAnalytics gaId={siteConfig.analytics.googleId} />
+            </body>
         </html>
     );
 }
