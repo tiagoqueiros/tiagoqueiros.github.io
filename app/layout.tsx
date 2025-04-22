@@ -6,7 +6,10 @@ import '@/styles/globals.scss';
 
 export const viewport: Viewport = {
     ...siteConfig.viewport,
-    themeColor: siteConfig.themeColor,
+    themeColor: [
+        { media: '(prefers-color-scheme: light)', color: siteConfig.themeColor },
+        { media: '(prefers-color-scheme: dark)', color: siteConfig.themeColor }
+    ],
     colorScheme: 'dark'
 };
 
@@ -23,10 +26,6 @@ export const metadata: Metadata = {
             { url: '/apple-touch-icon.png' },
         ],
     },
-    themeColor: [
-        { media: '(prefers-color-scheme: light)', color: siteConfig.themeColor },
-        { media: '(prefers-color-scheme: dark)', color: siteConfig.themeColor }
-    ],
     appleWebApp: {
         statusBarStyle: 'black-translucent',
         capable: true,
