@@ -28,7 +28,7 @@ export default function Hero({profile, hero}: HeroProps) {
             <div className="relative max-w-[800px] rounded-3xl bg-[#1B2542] p-8 sm:p-12 backdrop-blur-xl">
                 <div className="flex flex-col gap-8">
                     {/* Header */}
-                    <div className="grid grid-cols-1 sm:grid-cols-[1fr,auto] gap-8 sm:gap-x-8 items-start">
+                    <div className="grid grid-cols-1 sm:grid-cols-[1fr_auto] gap-8 sm:gap-x-8 items-start">
                         <div className="flex flex-col gap-5">
                         <span className="text-xs sm:text-sm font-medium text-blue-400 uppercase tracking-wide">
                             {profile.role}

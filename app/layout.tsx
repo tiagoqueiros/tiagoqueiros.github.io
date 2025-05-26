@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import { inter, outfit } from '@/lib/fonts';
 import { siteConfig } from '@/config/site';
-import '@/styles/globals.scss';
+import '@/styles/globals.css';
 
 export const viewport: Viewport = {
     ...siteConfig.viewport,

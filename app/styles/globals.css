@@ -1,0 +1,266 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --font-inter: var(--font-inter);
+  --font-outfit: var(--font-outfit);
+
+  --animate-gradient: gradient 6s linear infinite;
+  --animate-expand: expand 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  --animate-shine: shine 8s linear infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-wave: wave 2.5s ease-in-out infinite;
+  --animate-wave-slow: wave 3.5s ease-in-out infinite;
+  --animate-wave-reverse: wave-reverse 3s ease-in-out infinite;
+  --animate-morph: morph 8s ease-in-out infinite;
+  --animate-float-slow: float 8s ease-in-out infinite;
+  --animate-ripple: ripple 3s ease-in-out infinite;
+  --animate-drift: drift 20s linear infinite;
+  --animate-drift-slow: drift 30s linear infinite;
+  --animate-drift-slower: drift 40s linear infinite;
+  --animate-spin-slow: spin 20s linear infinite;
+  --animate-background-shine: background-shine 2s linear infinite;
+  --animate-move-x: move-x 20s linear infinite;
+  --animate-move-y: move-y 15s linear infinite;
+  --animate-move-diagonal: move-diagonal 25s linear infinite;
+  --animate-scale-pulse: scale-pulse 10s ease-in-out infinite;
+  --animate-wave-pulse: wave-pulse 8s ease-in-out infinite;
+
+  @keyframes gradient {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+  @keyframes expand {
+    0% {
+      transform: scaleX(0);
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      transform: scaleX(1);
+      opacity: 1;
+    }
+  }
+  @keyframes shine {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%) skewX(-15deg);
+    }
+    10% {
+      opacity: 0.5;
+    }
+    20% {
+      opacity: 0;
+      transform: translateX(100%) skewX(-15deg);
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  @keyframes wave {
+    0% {
+      transform: rotate(0deg) scale(1);
+    }
+    10% {
+      transform: rotate(14deg) scale(1.02);
+    }
+    20% {
+      transform: rotate(-8deg) scale(1);
+    }
+    30% {
+      transform: rotate(14deg) scale(1.02);
+    }
+    40% {
+      transform: rotate(-4deg) scale(1);
+    }
+    50% {
+      transform: rotate(10deg) scale(1.02);
+    }
+    60% {
+      transform: rotate(0deg) scale(1);
+    }
+    100% {
+      transform: rotate(0deg) scale(1);
+    }
+  }
+  @keyframes wave-reverse {
+    0% {
+      transform: rotate(0deg) scale(1);
+    }
+    10% {
+      transform: rotate(-14deg) scale(1.02);
+    }
+    20% {
+      transform: rotate(8deg) scale(1);
+    }
+    30% {
+      transform: rotate(-14deg) scale(1.02);
+    }
+    40% {
+      transform: rotate(4deg) scale(1);
+    }
+    50% {
+      transform: rotate(-10deg) scale(1.02);
+    }
+    60% {
+      transform: rotate(0deg) scale(1);
+    }
+    100% {
+      transform: rotate(0deg) scale(1);
+    }
+  }
+  @keyframes morph {
+    0% {
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50% {
+      border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100% {
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+  }
+  @keyframes ripple {
+    0% {
+      transform: scale(1);
+      opacity: 0.4;
+    }
+    50% {
+      transform: scale(1.5);
+      opacity: 0.2;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.4;
+    }
+  }
+  @keyframes drift {
+    0% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+      transform: translate(50px, 25px) rotate(90deg);
+    }
+    50% {
+      transform: translate(100px, 50px) rotate(180deg);
+    }
+    75% {
+      transform: translate(50px, 25px) rotate(270deg);
+    }
+    100% {
+      transform: translate(0, 0) rotate(360deg);
+    }
+  }
+  @keyframes background-shine {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: -200% 50%;
+    }
+  }
+  @keyframes move-x {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(100px);
+    }
+  }
+  @keyframes move-y {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(100px);
+    }
+  }
+  @keyframes move-diagonal {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(50px, 50px);
+    }
+  }
+  @keyframes scale-pulse {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  @keyframes wave-pulse {
+    0%,
+    100% {
+      transform: translateY(0) scale(1);
+    }
+    50% {
+      transform: translateY(-20px) scale(1.05);
+    }
+  }
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@utility hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+  }
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
