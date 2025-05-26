@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import random from 'lodash.random';
-import anime from 'animejs';
+import { animate } from 'animejs';
 
 export default function Wave() {
     const waveStartRef = useRef<SVGSVGElement | null>(null);
@@ -17,13 +17,12 @@ export default function Wave() {
         }
 
         startPaths.forEach((path: SVGPathElement, index: number) => {
-            anime({
-                targets: path,
+            animate(path, {
                 duration: random(3000, 5000),
-                easing: 'easeInOutQuad',
+                ease: 'inOutQuad',
                 d: endPaths?.[index]?.getAttribute('d'),
                 loop: true,
-                direction: 'alternate',
+                alternate: true,
             });
         });
     }, []);
