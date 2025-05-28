@@ -37,7 +37,7 @@
     "@types/react": "19.1.5",
     "@types/react-dom": "19.1.5",
     "@typescript-eslint/eslint-plugin": "^8.32.1",
-    "@typescript-eslint/parser": "^8.32.1",
+    "@typescript-eslint/parser": "^8.33.0",
     "eslint-plugin-react": "^7.37.5",
     "postcss-preset-env": "^10.1.6",
     "sass": "^1.89.0"
