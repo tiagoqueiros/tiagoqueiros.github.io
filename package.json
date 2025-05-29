@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.10",
-    "@tailwindcss/postcss": "^4.1.7",
+    "@tailwindcss/postcss": "^4.1.8",
     "@tailwindcss/typography": "^0.5.16",
     "@types/animejs": "^3.1.13",
     "@types/lodash.random": "^3.2.9",
