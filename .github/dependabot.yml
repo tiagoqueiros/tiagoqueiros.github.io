@@ -1,9 +1,12 @@
 version: 2
 updates:
-- package-ecosystem: npm
-  directory: "/"
-  schedule:
-    interval: daily
-  open-pull-requests-limit: 10
-  reviewers:
-  - tiagoqueiros
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: daily
+    ignore:
+      - dependency-name: "*"
+        update-types:
+          ["version-update:semver-minor", "version-update:semver-patch"]
+    reviewers:
+      - tiagoqueiros
