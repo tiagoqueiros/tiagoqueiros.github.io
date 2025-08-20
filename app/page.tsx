@@ -1,6 +1,6 @@
-import { content } from "@/config/content";
 import Hero from "@/components/hero";
 import Wave from "@/components/wave";
+import { content } from "@/config/content";
 
 export default function HomePage() {
   return (
