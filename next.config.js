@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  distDir: 'dist',
+  distDir: "dist",
   trailingSlash: true,
-  output: 'export',
+  output: "export",
   // Enable modern optimizations
   poweredByHeader: false,
   reactStrictMode: true,
@@ -12,11 +12,11 @@ const nextConfig = {
   },
   // Modern JS features
   experimental: {
-    optimizePackageImports: ['react', 'react-dom', 'animejs', 'lodash.random'],
+    optimizePackageImports: ["react", "react-dom", "animejs", "lodash.random"],
     serverActions: {
-      bodySizeLimit: '2mb'
-    }
-  }
-}
+      bodySizeLimit: "2mb",
+    },
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
