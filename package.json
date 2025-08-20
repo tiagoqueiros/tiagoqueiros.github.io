@@ -2,7 +2,6 @@
   "version": "1.1.0",
   "description": "My personal website made with Next.js.",
   "author": "Tiago Queirós",
-  "packageManager": "pnpm@10.14.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
