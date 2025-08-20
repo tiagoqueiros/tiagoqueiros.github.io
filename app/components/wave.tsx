@@ -40,7 +40,6 @@ export default function Wave() {
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1920 1080"
       >
-        <title>Wave Start</title>
         <g>
           <path
             d="M0 0V978H1682C1613 806 1582 727 1524 616C1483 520 1542 342 1495 270C1457 215 1365 173 1302 122C1256 85 1166 0 1166 0H0Z"
@@ -78,7 +77,6 @@ export default function Wave() {
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1920 1080"
       >
-        <title>Wave End</title>
         <g>
           <path
             d="M0 0V982H1682C1671 795 1612 712 1554 601C1513 506 1525 375 1477 274C1444 203 1391 141 1335 87C1300 54 1215 0 1215 0H0Z"
