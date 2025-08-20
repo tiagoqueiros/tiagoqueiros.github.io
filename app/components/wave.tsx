@@ -35,7 +35,7 @@ export default function Wave() {
         ref={waveStartRef}
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
                           min-w-full min-h-full w-auto h-auto
-                          landscape:w-[160vw] landscape:h-auto
+                          landscape:w-[200vw] landscape:h-auto
                           portrait:w-auto portrait:h-[200vh]"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1920 1080"
