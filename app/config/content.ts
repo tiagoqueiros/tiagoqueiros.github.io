@@ -14,7 +14,7 @@ export const content = {
     },
   },
   meta: {
-    title: "Tiago Queirós ⚡️ Product & Engineering",
+    title: "Tiago Queirós ⚡️ Engineering & Product",
     description:
       "Product Engineer combining engineering expertise with product thinking to build impactful digital experiences. Focused on delivering user-centered solutions through technical excellence.",
     ogImage: "/og-image.jpg",
@@ -22,7 +22,7 @@ export const content = {
   },
   profile: {
     name: "Tiago Queirós",
-    role: "Product & Engineering",
+    role: "Engineering & Product",
     location: "Porto, Portugal",
     image: {
       url: "/tiago.jpg",
